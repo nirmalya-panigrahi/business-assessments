@@ -1,0 +1,6 @@
+{
+  "name": "Business Assessments",
+  "description": "Category landing page for three business assessment tools: Behaviour Assessments, Aptitude Assessments, and Personality Assessments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
