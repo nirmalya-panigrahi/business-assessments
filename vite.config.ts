@@ -4,22 +4,9 @@ import fs from 'fs';
 import path from 'path';
 import {defineConfig} from 'vite';
 
-function resolveBasePath(): string {
-  if (process.env.VITE_BASE_PATH) {
-    return process.env.VITE_BASE_PATH.endsWith('/')
-      ? process.env.VITE_BASE_PATH
-      : `${process.env.VITE_BASE_PATH}/`;
-  }
-  if (process.env.GITHUB_ACTIONS === 'true') {
-    const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1] || 'business-assessment-suite';
-    return `/${repoName}/`;
-  }
-  return '/';
-}
-
 export default defineConfig(() => {
   return {
-    base: resolveBasePath(),
+    base: '/business-assessments/',,
     plugins: [
       react(),
       tailwindcss(),
