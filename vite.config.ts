@@ -6,7 +6,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/business-assessments/',,
+    base: '/business-assessments/',
     plugins: [
       react(),
       tailwindcss(),
