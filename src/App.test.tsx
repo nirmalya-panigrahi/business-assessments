@@ -26,6 +26,15 @@ describe('Business Assessment Suite integration — Blue Pill', () => {
       '#catalogue',
     );
 
+    const heroPhoto = screen.getByRole('img', {
+      name: /consultant reviewing assessment analytics on a laptop/i,
+    });
+    expect(heroPhoto).toHaveAttribute(
+      'src',
+      '/assets/aistudio/Gemini_Generated_Image-Photoroom_d08f7ed9.png',
+    );
+    expect(heroPhoto).toHaveClass('absolute', 'bottom-0', 'right-0', 'object-contain');
+
     const behaviourCard = screen.getByRole('link', {
       name: /Behaviour Assessments.*Psychometric framework analytics/i,
     });
