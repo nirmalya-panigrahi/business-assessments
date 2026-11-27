@@ -25,8 +25,6 @@ export function GuideSection({tools}: GuideSectionProps) {
               <a
                 className="guide-link flex items-center justify-between gap-4 min-h-16 py-5 no-underline text-[clamp(17px,2vw,20px)] leading-[1.4]"
                 href={tool.url}
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 <span className="max-w-[62ch]">
                   {tool.guidePrompt}:{' '}

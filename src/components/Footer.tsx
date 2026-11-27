@@ -9,8 +9,6 @@ export function Footer() {
             Find more tools at:{' '}
             <a
               href={STUDIO_ALL_TOOLS_URL}
-              target="_blank"
-              rel="noopener noreferrer"
               className="text-[var(--lime)] font-bold underline underline-offset-4 break-words"
             >
               {STUDIO_ALL_TOOLS_URL}

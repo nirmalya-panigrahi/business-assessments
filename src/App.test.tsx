@@ -51,7 +51,9 @@ describe('Business Assessment Suite integration — Blue Pill', () => {
       'href',
       'https://personality-assessments-seven.vercel.app/',
     );
-    expect(behaviourCard).toHaveAttribute('rel', 'noopener noreferrer');
+    expect(behaviourCard).not.toHaveAttribute('target', '_blank');
+    expect(aptitudeCard).not.toHaveAttribute('target', '_blank');
+    expect(personalityCard).not.toHaveAttribute('target', '_blank');
 
     expect(
       screen.getByRole('link', {name: /Understand how people behave at work:/i}),

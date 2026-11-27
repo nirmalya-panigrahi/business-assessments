@@ -13,8 +13,6 @@ export function Header() {
         <div className="flex items-center gap-2 shrink-0 md:hidden">
           <a
             href={STUDIO_ALL_TOOLS_URL}
-            target="_blank"
-            rel="noopener noreferrer"
             className="text-[15px] font-medium no-underline hover:underline underline-offset-4 whitespace-nowrap min-h-[44px] px-3 inline-flex items-center rounded-full"
           >
             All tools

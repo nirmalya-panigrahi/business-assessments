@@ -47,8 +47,6 @@ export function AssessmentCard({tool, prefersReducedMotion}: AssessmentCardProps
       ref={cardRef}
       className={`tool-card ${isVisible ? 'tool-card--visible' : 'tool-card--hidden'}`}
       href={tool.url}
-      target="_blank"
-      rel="noopener noreferrer"
     >
       <div className="p-4 md:p-5 flex-1 flex">
         <div
